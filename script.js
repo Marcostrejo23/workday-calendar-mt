@@ -1,6 +1,8 @@
+let button = $('.saveBtn')
+
+
 let now = moment()
 $("#head").text(now.format("dddd, MMMM Do YYYY, h:mm:ss a"));
-let button = $('.saveBtn');
 
 function currentTime() {
     let current = moment().hours()
@@ -19,6 +21,3 @@ function currentTime() {
   }
   
   currentTime()
-
-
-  
