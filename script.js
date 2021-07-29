@@ -37,9 +37,15 @@ container.on("click","#save-btn2", function(event){
 });
 container.on("click","#save-btn3", function(event){
   event.preventDefault();
-  var info2 = document.getElementById("eleven").value;
-  console.log(info2);
-  localStorage.setItem("info3",info2)
+  var info3 = document.getElementById("eleven").value;
+  console.log(info3);
+  localStorage.setItem("info3",info3)
+});
+container.on("click","#save-btn4", function(event){
+  event.preventDefault();
+  var info4 = document.getElementById("twelve").value;
+  console.log(info4);
+  localStorage.setItem("info4",info4)
 });
 
 function openPage(){
@@ -49,10 +55,13 @@ function openPage(){
   } if(document.getElementById("ten").value){
   }else {
   document.getElementById("ten").value = window.localStorage.getItem('info2');
-  }if(document.getElementById("eleven").value){
-  }else {
+  } if(document.getElementById("eleven").value){
+  } else {
   document.getElementById("eleven").value = window.localStorage.getItem('info3');
-  }
+  }if(document.getElementById("twelve").value){
+  } else {
+  document.getElementById("twelve").value = window.localStorage.getItem('info4');
+}
 
 };
 
