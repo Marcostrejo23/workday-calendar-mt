@@ -71,6 +71,12 @@ container.on("click","#save-btn8", function(event){
   console.log(info8);
   localStorage.setItem("info8",info8)
 });
+container.on("click","#save-btn9", function(event){
+  event.preventDefault();
+  var info9 = document.getElementById("seventeen").value;
+  console.log(info9);
+  localStorage.setItem("info9",info9)
+});
 
 //to make the saved text appear on refresh.
 function openPage(){
@@ -98,6 +104,9 @@ document.getElementById("fifteen").value = window.localStorage.getItem('info7');
   } if (document.getElementById("sixteen").value){
   } else {
 document.getElementById("sixteen").value = window.localStorage.getItem('info8');
+  } if (document.getElementById("seventeen").value){
+  } else {
+document.getElementById("seventeen").value = window.localStorage.getItem('info9');
   }
 
 };
