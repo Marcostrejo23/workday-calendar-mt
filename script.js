@@ -29,11 +29,23 @@ container.on("click","#save-btn1", function(event){
   console.log(info1);
   localStorage.setItem("info1",info1)
 });
+container.on("click","#save-btn2", function(event){
+  event.preventDefault();
+  var info2 = document.getElementById("ten").value;
+  console.log(info2);
+  localStorage.setItem("info2",info2)
+});
 
 function openPage(){
   if(document.getElementById("nine").value){
   }else {
   document.getElementById("nine").value = window.localStorage.getItem('info1');
-  }};
+  }
+  if(document.getElementById("ten").value){
+  }else {
+  document.getElementById("ten").value = window.localStorage.getItem('info2');
+  }
+
+};
 
   openPage();
