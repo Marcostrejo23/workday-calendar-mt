@@ -59,28 +59,37 @@ container.on("click","#save-btn6", function(event){
   console.log(info6);
   localStorage.setItem("info6",info6)
 });
-
+container.on("click","#save-btn7", function(event){
+  event.preventDefault();
+  var info7 = document.getElementById("fifteen").value;
+  console.log(info7);
+  localStorage.setItem("info7",info7)
+});
+//to make the saved text appear on refresh.
 function openPage(){
   if(document.getElementById("nine").value){
   }else {
   document.getElementById("nine").value = window.localStorage.getItem('info1');
-  } if(document.getElementById("ten").value){
+  } if (document.getElementById("ten").value){
   }else {
   document.getElementById("ten").value = window.localStorage.getItem('info2');
-  } if(document.getElementById("eleven").value){
+  } if (document.getElementById("eleven").value){
   } else {
   document.getElementById("eleven").value = window.localStorage.getItem('info3');
-  } if(document.getElementById("twelve").value){
+  } if (document.getElementById("twelve").value){
   } else {
   document.getElementById("twelve").value = window.localStorage.getItem('info4');
-} if(document.getElementById("thirteen").value){
-} else {
+  } if(document.getElementById("thirteen").value){
+  } else {
 document.getElementById("thirteen").value = window.localStorage.getItem('info5');
-} if(document.getElementById("fourteen").value){
-} else {
+  } if (document.getElementById("fourteen").value){
+  } else {
 document.getElementById("fourteen").value = window.localStorage.getItem('info6');
-}
+  } if (document.getElementById("fifteen").value){
+  } else {
+document.getElementById("fifteen").value = window.localStorage.getItem('info7');
+  }
 
 };
 
-  openPage();
+openPage();
