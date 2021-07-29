@@ -47,6 +47,12 @@ container.on("click","#save-btn4", function(event){
   console.log(info4);
   localStorage.setItem("info4",info4)
 });
+container.on("click","#save-btn5", function(event){
+  event.preventDefault();
+  var info5 = document.getElementById("thirteen").value;
+  console.log(info5);
+  localStorage.setItem("info5",info5)
+});
 
 function openPage(){
   if(document.getElementById("nine").value){
@@ -58,9 +64,12 @@ function openPage(){
   } if(document.getElementById("eleven").value){
   } else {
   document.getElementById("eleven").value = window.localStorage.getItem('info3');
-  }if(document.getElementById("twelve").value){
+  } if(document.getElementById("twelve").value){
   } else {
   document.getElementById("twelve").value = window.localStorage.getItem('info4');
+} if(document.getElementById("thirteen").value){
+} else {
+document.getElementById("thirteen").value = window.localStorage.getItem('info5');
 }
 
 };
