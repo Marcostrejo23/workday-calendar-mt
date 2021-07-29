@@ -53,6 +53,12 @@ container.on("click","#save-btn5", function(event){
   console.log(info5);
   localStorage.setItem("info5",info5)
 });
+container.on("click","#save-btn6", function(event){
+  event.preventDefault();
+  var info6 = document.getElementById("fourteen").value;
+  console.log(info6);
+  localStorage.setItem("info6",info6)
+});
 
 function openPage(){
   if(document.getElementById("nine").value){
@@ -70,6 +76,9 @@ function openPage(){
 } if(document.getElementById("thirteen").value){
 } else {
 document.getElementById("thirteen").value = window.localStorage.getItem('info5');
+} if(document.getElementById("fourteen").value){
+} else {
+document.getElementById("fourteen").value = window.localStorage.getItem('info6');
 }
 
 };
