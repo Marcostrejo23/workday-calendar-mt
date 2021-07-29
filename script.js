@@ -35,15 +35,23 @@ container.on("click","#save-btn2", function(event){
   console.log(info2);
   localStorage.setItem("info2",info2)
 });
+container.on("click","#save-btn3", function(event){
+  event.preventDefault();
+  var info2 = document.getElementById("eleven").value;
+  console.log(info2);
+  localStorage.setItem("info3",info2)
+});
 
 function openPage(){
   if(document.getElementById("nine").value){
   }else {
   document.getElementById("nine").value = window.localStorage.getItem('info1');
-  }
-  if(document.getElementById("ten").value){
+  } if(document.getElementById("ten").value){
   }else {
   document.getElementById("ten").value = window.localStorage.getItem('info2');
+  }if(document.getElementById("eleven").value){
+  }else {
+  document.getElementById("eleven").value = window.localStorage.getItem('info3');
   }
 
 };
