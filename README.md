@@ -9,4 +9,4 @@ you can enter text in the text area for any activities you have during the work 
 
 
 
-Deployed at: https://marcostrejo23.github.io/workday-calendar-mt/![Uploading Screen Shot 2021-08-09 at 9.17.15 AM.png…]()
+Deployed at: https://marcostrejo23.github.io/workday-calendar-mt/
